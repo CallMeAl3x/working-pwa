@@ -11,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^6.7.0",
     "@serwist/next": "latest",
     "next": "15.3.1",
     "react": "19.1.0",
@@ -21,6 +22,7 @@
     "@types/node": "22.14.1",
     "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
+    "prisma": "^6.7.0",
     "typescript": "5.6.3"
   }
 }
