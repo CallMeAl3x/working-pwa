@@ -1,5 +1,6 @@
 "use client";
 import { useState, FormEvent } from "react";
+import Link from "next/link";
 
 export default function Page() {
   const [status, setStatus] = useState("");
@@ -36,6 +37,9 @@ export default function Page() {
         <button type="submit">Submit</button>
       </form>
       <p>{status}</p>
+      <Link href="/data">
+        <button type="button">Data</button>
+      </Link>
     </>
   );
 }
