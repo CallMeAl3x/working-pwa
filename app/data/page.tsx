@@ -5,7 +5,7 @@ export default function DataPage() {
   const [data, setData] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch("/data.json")
+    fetch("/api/form", { cache: "no-store" })
       .then((res) => res.json())
       .then(setData)
       .catch(() => setData([]));
